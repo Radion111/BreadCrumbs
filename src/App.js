@@ -32,7 +32,7 @@ function App() {
   let globalurl = useLocation();
   let myurl = globalurl.pathname;
 
-  let diff = ["Home"];
+  let diff = [];
 
   let myurls = myurl.split("/").filter((el) => el);
 
