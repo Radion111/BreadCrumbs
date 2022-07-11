@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BreadCrumbs/static/css/main.27882ce2.css",
+    "main.js": "/BreadCrumbs/static/js/main.808ade88.js",
+    "index.html": "/BreadCrumbs/index.html",
+    "main.27882ce2.css.map": "/BreadCrumbs/static/css/main.27882ce2.css.map",
+    "main.808ade88.js.map": "/BreadCrumbs/static/js/main.808ade88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27882ce2.css",
+    "static/js/main.808ade88.js"
+  ]
+}
