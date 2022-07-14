@@ -10,12 +10,12 @@ function Mainmanual({ CheckClas }) {
     <div>
       <ul className="routerul">
         <li className="routeli">
-          <Link to="/work" className="LinkApp">
+          <Link to="/Home/work" className="LinkApp">
             Work
           </Link>
         </li>
         <li className="routeli">
-          <Link to="/about" className="LinkApp">
+          <Link to="/Home/about" className="LinkApp">
             About
           </Link>
         </li>

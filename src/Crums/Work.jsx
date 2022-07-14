@@ -8,17 +8,17 @@ function Work() {
       <div>THis is Work.jsx</div>
       <ul className="routerul">
         <li className="routeli">
-          <Link to="/work/designer" className="LinkWork">
+          <Link to="/Home/work/designer" className="LinkWork">
             Designer
           </Link>
         </li>
         <li className="routeli">
-          <Link to="/work/markete" className="LinkWork">
+          <Link to="/Home/work/markete" className="LinkWork">
             Markete
           </Link>
         </li>
         <li className="routeli">
-          <Link to="/work/engineer" className="LinkWork">
+          <Link to="/Home/work/engineer" className="LinkWork">
             Engineer
           </Link>
         </li>
