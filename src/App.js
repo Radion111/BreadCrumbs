@@ -28,17 +28,21 @@ import Erors from "./Crums/Crums2/Erors";
 import { useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
+
 function App() {
   let globalurl = useLocation();
   let myurl = globalurl.pathname;
 
-  let diff = [];
+  let diff = [""];
 
   let myurls = myurl.split("/").filter((el) => el);
 
   myurls.forEach((elem) => {
     diff.push(elem);
   });
+
+  const mynewBreadCrums = diff.join("/");
+  console.log(mynewBreadCrums);
 
   return (
     <div className="App">
@@ -53,7 +57,7 @@ function App() {
                     diff[diff.length - 1] == item ? "grayLinkMaps" : "linkMaps"
                   }
                   // ТАк тенарное добавления пути
-                  to={item == "work" ? "/Work" : "/"}
+                  to={mynewBreadCrums}
                 >
                   {item}
                 </Link>
@@ -62,18 +66,18 @@ function App() {
           </ul>
         </div>
         <Routes>
-          <Route path="/Home" element={<Mainmanual />}></Route>
-          <Route path="/Home/work" element={<Work />} />
+          <Route index path="/" element={<Mainmanual />}></Route>
+          <Route path="/work" element={<Work />} />
         </Routes>
         <hr style={{ Background: "white", width: "400px" }}></hr>
         <Routes>
-          <Route path="/Home/about" element={<About />} />
-          <Route path="/Home" element={<Manual />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Manual />} />
           <Route path="*" element={<Erors />} />
 
-          <Route path="/Home/work/designer" element={<Designer />} />
-          <Route path="/Home/work/engineer" element={<Engineer />} />
-          <Route path="/Home/work/markete" element={<Markete />} />
+          <Route path="/work/designer" element={<Designer />} />
+          <Route path="/work/engineer" element={<Engineer />} />
+          <Route path="/work/markete" element={<Markete />} />
         </Routes>
 
         <div style={{ marginTop: "200px" }}> THis is my footer</div>
