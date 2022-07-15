@@ -66,18 +66,18 @@ function App() {
           </ul>
         </div>
         <Routes>
-          <Route path="/" element={<Mainmanual />}></Route>
-          <Route path="/work" element={<Work />} />
+          <Route path="/Home" element={<Mainmanual />}></Route>
+          <Route path="/Home/work" element={<Work />} />
         </Routes>
         <hr style={{ Background: "white", width: "400px" }}></hr>
         <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Manual />} />
+          <Route path="/Home/about" element={<About />} />
+          <Route path="/Home" element={<Manual />} />
           <Route path="*" element={<Erors />} />
 
-          <Route path="/work/designer" element={<Designer />} />
-          <Route path="/work/engineer" element={<Engineer />} />
-          <Route path="/work/markete" element={<Markete />} />
+          <Route path="/Home/work/designer" element={<Designer />} />
+          <Route path="/Home/work/engineer" element={<Engineer />} />
+          <Route path="/Home/work/markete" element={<Markete />} />
         </Routes>
 
         <div style={{ marginTop: "200px" }}> THis is my footer</div>
